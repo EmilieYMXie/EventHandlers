@@ -1,29 +1,23 @@
+
 .mainQuote {
-  font-size: 30px;
-  font-size: 1.875rem;
-  line-height: 34px;
-  line-height: 2.125rem;
-  font-weight: 300;
-  font-style: normal;
+  font: bold 32px/36px Georgia,Century,Times,serif;
+  color: #111;
+  margin-bottom: 10px;
 }
 
 .wholeQuote {
-	  font-size: 18px;
-  line-height: 140%;
-  font-family: 'Helvetica';
-  padding-top: 20px;
-  padding-left: 5px;
-  margin-top: 0px;
-  margin-bottom: 10px;
+  font: 15px/21px Georgia,Century,Times,serif;
+  color: #333;
+  margin-bottom: 15px;
 }
 
 .source {
 	display: inline-block;
   text-align: right;
   right: 0;
-  color: #000;
+  color: #ed7c00;
   width: 796px;
-  font-family: 'Helvetica;
+  font: 15px/21px Georgia,Century,Times,serif;
   font-size: 18px;
   line-height: 20px;
 }
