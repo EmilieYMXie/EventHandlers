@@ -53,3 +53,11 @@
 	font-size: 1em;
 	margin: 1em 0;
 }
+
+.moreInfo {
+	display: none;
+}
+
+.expanded .moreInfo {
+	display: block;
+}
