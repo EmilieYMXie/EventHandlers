@@ -3,7 +3,7 @@ for (var i=0; i<guardianHeroinData.length; i++) {
 	
 	var $template = $('<div class="quoteContainer">'+
 						'<div class="mainQuote">'+rowData.mainQuote+'</div>'+
-						'<div class="readMore">Read More</div>'+
+						'<div class="readMore">Read More >></div>'+
 						'<div class="more.Info">'+
 							'<div class="wholeQuote">'+rowData.wholeQuote+'</div>'+
 							'<div class="source">'+rowData.source+'</div>'+
@@ -13,16 +13,26 @@ for (var i=0; i<guardianHeroinData.length; i++) {
 					'</div>');
 	$('#dataContainer').append($template);
 		
+	$template.find(".readMore").on("click", toggleContent);
 		
 }
 
 		function toggleContent(e) {
-			$quoteContainer = $(e.target).parent();
+			var $quoteContainer = $(e.target).parent();
 			
-			if ($quoteContainer.hasClass("expanded")) { //I'm checking to see if a class is there, quoteContainer has class. expanded (you can see content), so remove content
-				$quoteContainer.removeClass("expanded");
-			} else { // quoteContainer does not have class expanded (you can't see content), so show content
-				$quoteContainer.addClass("expanded");
+			if ($quoteContainer.hasClass('expanded')) { 
+				
+				//I'm checking to see if a class is there, quoteContainer has class. expanded (you can see content), so remove content
+				
+				$quoteContainer.removeClass('expanded');
+				
+			} else { 
+				
+				// quoteContainer does not have class expanded (you can't see content), so show content
+				
+				$quoteContainer.addClass('expanded');
+				
+				
 			}
 		}
 		
