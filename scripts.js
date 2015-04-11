@@ -4,7 +4,7 @@ for (var i=0; i<guardianHeroinData.length; i++) {
 	var $template = $('<div class="quoteContainer">'+
 						'<div class="mainQuote">'+rowData.mainQuote+'</div>'+
 						'<div class="readMore">Read More >></div>'+
-						'<div class="more.Info">'+
+						'<div class="moreInfo">'+
 							'<div class="wholeQuote">'+rowData.wholeQuote+'</div>'+
 							'<div class="source">'+rowData.source+'</div>'+
 							'<div class="yearsClean">'+rowData.yearsClean+'</div>'+
