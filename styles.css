@@ -13,7 +13,6 @@
 }
 
 .source {
-	display: inline-block;
   text-align: right;
   right: 0;
   color: #000;
@@ -25,7 +24,6 @@
 }
 
 .yearsClean {
-	display: inline-block;
   text-align: right;
   right: 0;
   color: #ed7c00;
@@ -37,7 +35,6 @@
 }
 
 .location {
-		display: inline-block;
   text-align: right;
   right: 0;
   color: #000;
@@ -52,12 +49,15 @@
 	color: #ed7c00;
 	font-size: 1em;
 	margin: 1em 0;
+	cursor: pointer;
+}
+
+.expanded .moreInfo {
+	display: block;
 }
 
 .moreInfo {
 	display: none;
 }
 
-.expanded .moreInfo {
-	display: block;
-}
+

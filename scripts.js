@@ -11,10 +11,9 @@ for (var i=0; i<guardianHeroinData.length; i++) {
 							'<div class="location">'+rowData.location+'</div>'+
 						'</div>'+
 					'</div>');
+	$('#dataContainer').append($template);
 		
-		$template.find(".readMore").on("click", toggleContent);
 		
-		$('#dataContainer').append($template);
 }
 
 		function toggleContent(e) {
